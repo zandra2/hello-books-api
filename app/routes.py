@@ -3,8 +3,7 @@ from flask import Blueprint, jsonify
 books_bp = Blueprint("books_bp", __name__, url_prefix="/books")
 
 @books_bp.route("", methods=["GET"])
-def handle_books():
-    return "Hello World"
+
 # @books_bp.route("", methods=["GET"])
 # def handle_books():
 #     books_response = []
